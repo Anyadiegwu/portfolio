@@ -6,7 +6,7 @@ import BackBtn from '../../assest/backBtn/BackBtn';
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import genesys from "../../assest/images/genesys.png";
-import cert from "../../assest/images/LearnableCert.png";
+import cert from "../../assest/images/LearnableCert.jpg";
  
 function AboutBGPg() {
   return (
