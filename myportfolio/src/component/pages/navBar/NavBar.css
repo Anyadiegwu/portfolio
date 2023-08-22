@@ -1,0 +1,22 @@
+.navBar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.navBar ul li{
+    text-align: center;
+    list-style: none;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: #9E9E9E;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.navBar ul li .active{
+    color: #FEBD81;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #FEBD81;
+}

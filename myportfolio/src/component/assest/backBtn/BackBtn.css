@@ -1,0 +1,29 @@
+.backBtnWrapper{
+    width: 15%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.backBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+}
+.backBtn:hover{
+    cursor: pointer;
+}
+.backBtn p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: linear-gradient(to right,#A9FE81, #46CBF4);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
