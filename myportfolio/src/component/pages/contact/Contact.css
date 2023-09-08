@@ -1,0 +1,126 @@
+.contactBWrapper{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+
+}
+.contactBtn{
+    width: 96%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contactWrapper{
+    width: 95%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contactWrapper p:nth-child(1){
+    color: #D4D4D4;
+}
+.conBWr{
+    width: 150%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.conBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conBody h1{
+    font-family: 'KoHo', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.conBody h2{
+    font-family: Kalam;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-align: left;
+    background: linear-gradient(270deg, #FBAE95 11.87%, #FFE598 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.inforW{
+    display: flex;
+    justify-content: flex-end;
+    width: 27%;
+}
+.infor{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.infor a{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.contactIcon{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(163.71deg, #EFAA6B 0.26%, rgba(213, 102, 182, 0.624531) 0.87%, rgba(200, 69, 228, 0.342178) 50.65%, rgba(181, 23, 255, 0.11) 98.68%);
+}
+.contactIcon i{
+    color: white;
+    display: flex;
+    height: 25px;
+    width: 25px;
+    opacity: 58%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(163.71deg, #EFAA6B 11.26%, rgba(213, 102, 182, 0.624531) 44.87%, rgba(200, 69, 228, 0.342178) 70.65%, rgba(181, 23, 255, 0.11) 88.68%);
+    border-radius: 50%;
+}
+.mediaW{
+    width: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.media{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.media a{
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #EEEEEE;
+    text-decoration: none;
+    border-bottom: 1px solid #EEEEEE;
+}

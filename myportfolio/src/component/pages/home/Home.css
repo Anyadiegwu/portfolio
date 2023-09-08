@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homePg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assest/images/port.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homePg header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 25%;
+    width: 20%;
+}
+.homePg h1{
+    color: #DBA6F4;
+    font-size: 48px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'KoHo', sans-serif;
+}
+.homePg p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.planets{
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 30%;
+    top: 20%;
+}
+.saturn img{
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 22%;
+}
+.mercury img{
+    width: 50px;
+    position: absolute;
+    left: 10%;
+    top: 100%;
+}
+.mars img{
+    width: 50px;
+    position: absolute;
+    left: 85%;
+    top: 0;
+}
+.uranus img{
+    width: 50px;
+    position: absolute;
+    left: 95%;
+    top: 90%;
+}
+.earth img{
+    width: 260px;
+    position: absolute;
+    left: 25%;
+    top: 18%;
+}
+.spinner{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 320px;
+    height: 320px; 
+    border-bottom: 2px solid #FFFFFF;   
+    border: 2px solid #FFFFFF - 0%;
+    border-top: 2px solid #FEBD81;
+    border-radius: 50%;
+    animation: spin 2s linear infinite reverse; /* Use 'reverse' to rotate anticlockwise */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} 
+.spinner:before{
+    border: 10px solid transparent;
+    border-image: linear-gradient(45deg, #ff6347, #333);
+    border-image-slice: 1;
+  
+}
+
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg); /* Negative value for anticlockwise rotation */
+    }
+  }
+  
+
+  
+.sideBar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 60px;
+    margin-right: 50px;
+}
