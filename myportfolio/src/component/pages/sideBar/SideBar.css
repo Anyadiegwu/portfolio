@@ -1,6 +1,8 @@
 .sidePlanet{
     position: absolute;
     width: 65%;
+    max-width: 85%;
+    border: 1px solid red;
     height: 70%;
     left: -26%;
     z-index: 0;
@@ -66,6 +68,13 @@
     font-size: 24px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+.sideBarLink a:hover{
+    color: #FEBD81;
+    font-size: 24px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #FEBD81;
+}
 .sideBarLink .active{
     color: #FEBD81;
     font-size: 24px;
@@ -78,26 +87,58 @@
 }
 .sideBarLink1{
     position: absolute;
-    top: 25%;
-    left: 1%;
+    top: 155px;
+    left: 10px;
 }
 .sideBarLink2{
     position: absolute;
-    top: 35%;
-    left: 9%;
+    top: 200px;
+    left: 120px;
 }
 .sideBarLink3{
     position: absolute;
-    top: 52%;
-    left: 10.5%;
+    top: 290px;
+    left: 130px;
 }
 .sideBarLink4{
     position: absolute;
-    top: 67%;
-    left: 8%;
+    top: 390px;
+    left: 110px;
 }
 .sideBarLink5{
     position: absolute;
-    top: 79%;
-    left: 1%;
+    top: 460px;
+    left: 20px;
+}
+@media screen  and (max-width: 2000px){
+
+    .sidePlanet{
+        width: 85%;
+    }
+}
+@media screen  and (max-width: 1500px){
+    .sidePlanet{
+        border: 1px solid green;
+        width: 75%;
+    }
+}
+@media screen  and (max-width: 1400px){
+    .sidePlanet{
+        width: 72%;
+    }
+}
+@media screen  and (max-width: 1300px){
+    .sidePlanet{
+        width: 68%;
+    }
+}
+@media screen  and (max-width: 1100px){
+    .sidePlanet{
+        width: 62%;
+    }
+}
+@media screen  and (max-width: 900px){
+    .sidePlanet{
+        width: 52%;
+    }
 }
