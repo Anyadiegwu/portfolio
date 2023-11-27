@@ -102,6 +102,9 @@
     background: linear-gradient(163.71deg, #EFAA6B 11.26%, rgba(213, 102, 182, 0.624531) 44.87%, rgba(200, 69, 228, 0.342178) 70.65%, rgba(181, 23, 255, 0.11) 88.68%);
     border-radius: 50%;
 }
+.contactIcon i svg{
+    width: 20px;
+}
 .mediaW{
     width: 150%;
     display: flex;
