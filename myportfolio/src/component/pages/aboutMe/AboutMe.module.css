@@ -1,17 +1,18 @@
 .aboutme{
     width: 97%;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+
 }
 .aboutTWrapper{
     width: 70%;
     height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .aboutTitle{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -53,12 +54,13 @@
     letter-spacing: 0px;
     text-align: center;
     color: #ffffff;
-    width: 800px;
-    height: 116px
+    width: 100%;
+    height: fit-content;
 }
 .techskill{
     width: 83%;
     height: 100%;
+    margin-top: 30px;
 }
 .techskill h2, .techskills h2{
     font-family: 'KoHo', sans-serif;
@@ -73,7 +75,7 @@
 }
 .skillSet{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 .skilltab{
     max-width: 120px;
@@ -114,7 +116,7 @@
 }
 .aboutBT{
     width: 90%;
-    height: 80vh;
+    height: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -231,9 +233,16 @@
     letter-spacing: 0em;
     text-align: left;
 }
-.bccImg img{
+.bccImg img:nth-child(1){
     width: 130px;
+    object-fit: contain;
     position: absolute;
+}
+.bccImg img:nth-child(2){
+    width: 125px;
+    height: 130px;
+    position: absolute;
+    margin-left: 260px;
 }
 
 /* About me genesys page */
@@ -315,4 +324,19 @@
     position: absolute;
     top: 75%;
     left: 50%;
+}
+
+@media screen and (max-width: 650px) {
+    .aboutme{
+        margin-top: 35px;
+    }
+    .skillWrapper h1{
+        font-size: 40px; 
+    }
+    .aboutTWrapper{
+        width: 99%;
+    }
+    /* .intropg{
+        padding-bottom: 60px;
+    } */
 }

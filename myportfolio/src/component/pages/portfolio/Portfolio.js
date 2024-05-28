@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Portfolio.css";
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -10,6 +10,10 @@ import vector from '../../assest/images/vector.png'
 
 
 function Portfolio() {
+  const [navBar, setNavBar] = useState(true)
+  const allow = (data) =>{
+      setNavBar(data)  
+  }
   return (
     <div className='introPg'>
       <div>
@@ -34,10 +38,9 @@ function Portfolio() {
           <div className='portfol'>
             <h1>Portfolio Highlight</h1>
             <p>In my portfolio, you will find a <span>variety of projects </span>
-               showcasing my design skills. My project highlight include 
+               showcasing my skills. My project highlight include 
                 <span> personal projects</span>, my collaborative effort in <span>team 
-               projects</span> and also <span>project challenges</span>. By leveraging my skills
-                I have created designs that is intriguing and captivating. </p>
+               projects</span> and also <span>project challenges</span>.</p>
             <div className='nextWrap'>
               <img src={vector} alt='' />
               <div className='pWrapper'>

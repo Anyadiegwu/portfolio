@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css';
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -13,6 +13,10 @@ import { GrMail, GrLinkedinOption } from 'react-icons/gr';
 
 
 function Contact() {
+  const [navBar, setNavBar] = useState(true)
+  const allow = (data) =>{
+      setNavBar(data)  
+  }
   return (
     <div className='introPg'>
       <div>

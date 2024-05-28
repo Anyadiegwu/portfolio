@@ -13,8 +13,10 @@ function Home() {
   return (
     <div className='homePg'>
         <header>
-            <h1>Welcome</h1>
-            <p>To my Portfolio</p>
+            <div>
+                <h1>Welcome</h1>
+                <p>To my Portfolio</p>
+            </div>
         </header>
         <main>
             <div className='planets'>

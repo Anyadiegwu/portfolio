@@ -1,0 +1,92 @@
+.sh-Menu{
+    display: none;
+}
+.mob-sidebar{
+    display: none;       
+}
+@media screen and (max-width: 650px) {
+    .sh-Menu{
+        display: block;
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        height: 100vh;
+        box-shadow: 0px 0px 4px 0px #2a3437;
+        background: linear-gradient(to right,  #02080d, #02080d, #4D6995);
+    }
+    .sh-Menu div{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sh-Menu li{
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding: 10px 0px;
+        list-style: none;
+    }
+    .sh-Menu li a{
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-family: 'KoHo', sans-serif;
+    }
+    .sh-Menu li a:hover{
+        border-bottom: 2px solid #FFFFFF;
+        
+    }
+    .sh-Menu li .active{
+        border-bottom: 2px solid #FFFFFF;
+        
+    }
+    .mob-sidebar{
+        z-index: 4;
+        display: inline;
+        position: fixed;
+        width: 100%;
+        background: linear-gradient(to left,  #02080d, #02080d, #4D6995, #02080d);
+        height: 80px;
+    }
+    .mob-sideEarth img{
+        width: 36px;
+        position: absolute;
+        left: 35px;
+        z-index: 0;
+        top: 25px;
+    }
+    .mob-sideSpinner{
+        position: fixed;
+        top: 8px;
+        z-index: 0;
+        left: 20px;
+        width: 65px;
+        height: 65px; 
+        border-bottom: 1px solid #FFFFFF;   
+        border: 1px solid #FFFFFF - 0%;
+        border-top: 1px solid #FEBD81;
+        border-radius: 50%;
+        animation: spin 2s linear infinite reverse; /* Use 'reverse' to rotate anticlockwise */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    } 
+    .mob-sideSpinner:before{
+        border: 1px solid transparent;
+        border-image: linear-gradient(45deg, #ff6347, #333);
+        border-image-slice: 1;
+      
+    }
+    
+      
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg); /* Negative value for anticlockwise rotation */
+        }
+      }
+}

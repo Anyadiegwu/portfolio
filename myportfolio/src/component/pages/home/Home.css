@@ -11,12 +11,12 @@
     background-size: cover;
 }
 .homePg header{
+    z-index: 5;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 25%;
-    width: 20%;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 35%;
 }
 .homePg h1{
     color: #DBA6F4;
@@ -34,18 +34,21 @@
     position: absolute;
     width: 45%;
     height: 60%;
+    z-index: -2;
     left: 30%;
     top: 20%;
 }
 .saturn img{
     width: 50px;
     position: absolute;
+    z-index: 0;
     left: 0;
     top: 22%;
 }
 .mercury img{
     width: 50px;
     position: absolute;
+    z-index: 0;
     left: 10%;
     top: 100%;
 }
@@ -53,18 +56,21 @@
     width: 50px;
     position: absolute;
     left: 85%;
+    z-index: 0;
     top: 0;
 }
 .uranus img{
     width: 50px;
     position: absolute;
     left: 95%;
+    z-index: 0;
     top: 90%;
 }
 .earth img{
     width: 260px;
     position: absolute;
     left: 25%;
+    z-index: 0;
     top: 18%;
 }
 .spinner{
@@ -73,6 +79,7 @@
     left: 20%;
     width: 320px;
     height: 320px; 
+    z-index: 1;
     border-bottom: 2px solid #FFFFFF;   
     border: 2px solid #FFFFFF - 0%;
     border-top: 2px solid #FEBD81;
@@ -108,4 +115,25 @@
     align-items: flex-end;
     padding-top: 60px;
     margin-right: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    .homePg header{
+        height: 18%;
+        width: 42%;
+    }
+    .planets{
+        left: 5%;
+        top: 20%;
+    }
+    .earth img{
+        left: 30%;
+    }
+    .mars img{
+        left: 140%;
+    }
+    .uranus img{
+        left: 135%;
+        top: 100%;
+    }
 }

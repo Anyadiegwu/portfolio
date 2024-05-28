@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Portfolio.css";
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -9,6 +9,10 @@ import BackBtn from '../../assest/backBtn/BackBtn';
 
 
 function Projects() {
+  const [navBar, setNavBar] = useState(true)
+  const allow = (data) =>{
+      setNavBar(data)  
+  }
   return (
     <div className='introPg'>
         <div className='pSideBar'>
