@@ -49,10 +49,12 @@ function AboutBGPg() {
                   potential users.</p>
               </div>
             <div>
+              <div className={style.provepic}>
                 <img src={genesys} alt='intern week' />
                 <div className={style.learnableCert}>
                   <img src={cert} alt='intern week' />
                 </div>
+              </div>
                 <div className={style.pWrapper}>
                   <div className={style.profileBtn}>
                     <button type={style.btn}>

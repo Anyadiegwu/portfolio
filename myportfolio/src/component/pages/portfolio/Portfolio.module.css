@@ -10,6 +10,29 @@
     align-items: center;
     justify-content: flex-end;
 }
+.portfolio{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutTitle{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #D4D4D4;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.aboutTitle i{
+    margin-top: 4px;
+    font-size: 18px;
+}
 .portfol h1{
     font-family: 'KoHo', sans-serif;
     font-size: 40px;
@@ -28,7 +51,7 @@
     line-height: 29px;
     letter-spacing: 0px;
     text-align: center;
-    width: 834px;
+    width: 100%;
     color: #ffffff;
 }
 .portfol p span:nth-child(4){
@@ -59,7 +82,27 @@
 .nextWrap img{
     width: 250px;
 }
-
+.pWrapper{
+    padding: 30px 0;
+}
+.profileBtn button{
+    background: linear-gradient(to right, #FFE597, #AAFF82);
+    width: Hug (180px);
+    height: Hug (48px);
+    padding: 9.5px 12px 9.5px 12px;
+    border-radius: 100px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: none;
+}
+.profileBtn a{
+    text-decoration: none;
+    color: black;
+}
 /* Projects.js */
 .pWBtn{
     position: absolute;
@@ -69,4 +112,14 @@
 .projectWrapper{
     overflow-y: scroll;
     
+}
+@media screen and (max-width: 650px) {
+    .portfolWrapper{
+        margin-top: 0px;
+        padding-left: 30px;
+        width: 90%;
+    }
+    .portfolio{
+        width: 100%;
+    } 
 }

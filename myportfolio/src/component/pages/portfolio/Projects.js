@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Portfolio.css";
+import style from "./Portfolio.module.css";
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
 import { Link } from 'react-router-dom';
@@ -18,7 +18,7 @@ function Projects() {
         <div className='pSideBar'>
             <SideBar />
         </div>
-        <div className='pWBtn'>
+        <div className={style.pWBtn}>
             <div className='profileBtn'>
               <button type='btn'>
                 <Link to='/contactme'>Next Slide...</Link>
@@ -31,7 +31,7 @@ function Projects() {
         <div className='backBtnWrapper'>
             <BackBtn />
         </div>
-      <div className='projectWrapper'>
+      <div className={style.projectWrapper}>
 
       </div>
     </div>

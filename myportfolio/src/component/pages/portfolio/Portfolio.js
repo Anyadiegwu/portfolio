@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Portfolio.css";
+import style from "./Portfolio.module.css";
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
 import BackBtn from '../../assest/backBtn/BackBtn';
@@ -21,31 +21,31 @@ function Portfolio() {
       </div>
       <div>
         <Star />
-        <div className='moon'>   
+        <div className={style.moon}>   
           <img src={moon} alt='moon' />
         </div>
       </div>
       <div className='backBtnWrapper'>
         <BackBtn />
       </div>
-      <div className='portfolWrapper'>
-        <div>
-          <span className='aboutTitle'>
+      <div className={style.portfolWrapper}>
+        <div className={style.portfolio}>
+          <span className={style.aboutTitle}>
             <p>About me</p>
             <i><MdKeyboardArrowRight /></i>
             <p>Portfolio highlight</p>
           </span>  
-          <div className='portfol'>
+          <div className={style.portfol}>
             <h1>Portfolio Highlight</h1>
             <p>In my portfolio, you will find a <span>variety of projects </span>
                showcasing my skills. My project highlight include 
                 <span> personal projects</span>, my collaborative effort in <span>team 
                projects</span> and also <span>project challenges</span>.</p>
-            <div className='nextWrap'>
+            <div className={style.nextWrap}>
               <img src={vector} alt='' />
-              <div className='pWrapper'>
-                <div className='profileBtn'>
-                  <button type='btn'>
+              <div className={style.pWrapper}>
+                <div className={style.profileBtn}>
+                  <button type={style.btn}>
                     <Link to='/portfolio/projects'>Next Slide...</Link>
                   </button>
                 </div>

@@ -21,69 +21,73 @@ function AboutNPg() {
         <div className="backBtnWrapper">
             <BackBtn />
         </div>
-        <div>
+        <div className={style.abbtWrap}>
             <div className={style.card}>
                 <img src={card} alt='' />
             </div>
             <div className={style.aboutBT}>
                 <div className={style.aboutBWrapper}>
                     <div className={style.aboutTW}>
-                        <span className={style.aboutTitle}>
-                            <p>About me</p>
-                            <i><MdKeyboardArrowRight /></i>
-                            <p>My Skills</p>
-                        </span>
-                        <div className={style.aboutB}>
-                            <div className={style.techskills}>
-                                <h2>Non-Technical Skills</h2>
-                                <div className={style.skillSet}>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Empathizing</p>
+                        <div className={style.aboutTTW}>
+                            <span className={style.aboutTitle}>
+                                <p>About me</p>
+                                <i><MdKeyboardArrowRight /></i>
+                                <p>My Skills</p>
+                            </span>
+                            <div className={style.aboutB}>
+                                <div>
+                                    <div className={style.techskills}>
+                                        <h2>Non-Technical Skills</h2>
+                                        <div className={style.skillSets}>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Empathizing</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Presentation</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Flexibility</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Time Management</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Continuous Learning</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Analytical Thinking</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Communication</p>
+                                                </div>
+                                            </div>
+                                            <div className={style.skilltabs}>
+                                                <div>
+                                                    <p>Collaboration</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Presentation</p>
+                                    <div className={style.pWrapper}>
+                                        <div className={style.profileBtn}>
+                                            <button type={style.btn}>
+                                                <Link to='/aboutme/codecamp'>Next Slide...</Link>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Flexibility</p>
-                                        </div>
-                                    </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Time Management</p>
-                                        </div>
-                                    </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Continuous Learning</p>
-                                        </div>
-                                    </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Analytical Thinking</p>
-                                        </div>
-                                    </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Communication</p>
-                                        </div>
-                                    </div>
-                                    <div className={style.skilltabs}>
-                                        <div>
-                                            <p>Collaboration</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={style.pWrapper}>
-                                <div className={style.profileBtn}>
-                                    <button type={style.btn}>
-                                        <Link to='/aboutme/codecamp'>Next Slide...</Link>
-                                    </button>
                                 </div>
                             </div>
                         </div>
