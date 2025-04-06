@@ -1,0 +1,112 @@
+.projectWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.project{
+    width: 70%;
+    height: 95%;
+}
+.projectWrapper a{
+    text-decoration: none;
+}
+.projectL{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    margin: 10px 0 20px;
+}
+.projectL img{
+    width: 70%;
+    height: 70%;
+    /* border: 1px solid red; */
+}
+.project h1{
+    font-family: 'KoHo', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: linear-gradient(270deg, #AB83FE 41.87%, #FBAE96 130%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.project p{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 70%;
+    color: #ffffff;
+}
+.project p span:nth-child(1){
+    background: linear-gradient(90deg, #FFE597 33.55%, #AAFF82 121.81%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.project p span:nth-child(2){
+    background: linear-gradient(270deg, #81B3FE 11.87%, #E0A6F4 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.linkTag{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.linkTag a:nth-child(1){
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(270deg, #A9FE81 80.87%, #46CBF4 110%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* .linkTag a:nth-child(1):hover{
+  
+} */
+.linkTag a:nth-child(2){
+    width: 15%;
+    background: linear-gradient(270deg, #A9FE81 80.87%, #46CBF4 110%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* .linkTag a:nth-child(2):hover{
+  
+} */
+.pWBtn{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and (max-width: 650px) {
+    .project{
+        width: 100%;
+        height: 80%;
+    }
+    .projectWrapper{
+        width: 92%;
+        height: 80%;
+        padding-left: 28px;
+    }
+    .projectL img{
+        width: 96%;
+        height: 70%;
+    }
+    .project p{
+        width: 96%;
+    }
+    .linkTag{
+        width: 95%;
+    }
+    .pWBtn{
+        width: 100%;
+    }
+}

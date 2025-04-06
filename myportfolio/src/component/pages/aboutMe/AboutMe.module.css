@@ -406,17 +406,21 @@
         font-size: 24px;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .aboutme{
         padding-left: 30px;
         width: 90%;
         height: 90%;
+        margin-top: 50px;
         margin-bottom: 0;
         padding-bottom: 0;
     }
+    .aboutTWrapper{
+        height: 80%;
+    }
     .abbtWrap{
         height: 90%;
-        margin-top: 30px;
+        margin-top: 40px;
         width: 90%;
         padding-left: 30px;
     }
@@ -447,8 +451,9 @@
         height: 100%;
     }
     .card{
-        top: 10%;
-        left: 50%;
+        top: 14%;
+        left: 48%;
+        position: fixed;
     }
     .genesysWrap{
         margin-top: 0px;

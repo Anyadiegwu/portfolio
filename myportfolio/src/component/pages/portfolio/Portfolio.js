@@ -46,7 +46,7 @@ function Portfolio() {
               <div className={style.pWrapper}>
                 <div className={style.profileBtn}>
                   <button type={style.btn}>
-                    <Link to='/portfolio/projects'>Next Slide...</Link>
+                    <Link to='/portfolio/dice'>Next Slide...</Link>
                   </button>
                 </div>
               </div>
