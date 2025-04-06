@@ -239,13 +239,10 @@
     .introN section{
         width: 80%;
     }
-
 }
 @media screen and (max-width: 650px) {
-    .introPg{
-        /* padding-bottom: 30px; */
-    }
     .intro{
+        align-items: flex-start;
         padding-top: 30px;
     }
     .introN section{
@@ -258,7 +255,7 @@
         margin-left: 10px;
     }
     .introDes {
-        width: 100%;
+        width: 95%;
         font-size: 1.9em;
         justify-content: center;
         margin-left: 0px;
@@ -273,9 +270,10 @@
         justify-content: center;
     }
     .profile{
-        display: block;
+        display: flex;
+        align-items: flex-start;
         margin: 100px 0 0 0;
-        width: 100%;
+        width: 95%;
     }
     .profileMain h2{
         margin-left: 8px;
@@ -297,7 +295,15 @@
     }
     .profileBtn{
         display: flex;
+        height: 15%;
         justify-content: flex-end;
-        margin:10vh 20px 15px 0;
+        align-items: flex-end;
+        margin: 15px 20px 15px 0;
+    }
+    .introBtn{
+        width: 90%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
     }
 }
