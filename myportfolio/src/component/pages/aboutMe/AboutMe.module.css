@@ -419,9 +419,13 @@
     .aboutTWrapper{
         height: 80%;
     }
+    .aboutB{
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+    }
     .abbtWrap{
-        height: 90%;
-        margin-top: 40px;
+        margin-top: 110px;
         width: 90%;
         padding-left: 30px;
     }
@@ -452,9 +456,8 @@
         height: 100%;
     }
     .card{
-        top: 14%;
+        top: 18%;
         left: 48%;
-        position: fixed;
     }
     .genesysWrap{
         margin-top: 0px;
@@ -467,11 +470,12 @@
     .genesysP{
         width: 100%;
     }
+    .pWrapper{
+        padding: 0px 0 20px;
+        margin-top: -20px;
+    }
 }
 @media screen and (max-width: 500px) {
-    .abbtWrap{
-        height: 135%;
-    }
     .aboutBWrapper{
         height: 100%;
     }
