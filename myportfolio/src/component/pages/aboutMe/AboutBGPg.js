@@ -55,7 +55,7 @@ function AboutBGPg() {
                   <img src={cert} alt='intern week' />
                 </div>
               </div>
-                <div className={style.pWrapper}>
+                <div className={style.pWrapperBcc}>
                   <div className={style.profileBtn}>
                     <button type={style.btn}>
                       <Link to='/portfolio'>Next Slide...</Link>
