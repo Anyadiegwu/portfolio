@@ -492,4 +492,7 @@
     .aboutBWrapper{
         height: 100%;
     }
+    .bccT{
+        gap: 5px;
+    }
 }
