@@ -492,7 +492,13 @@
     .aboutBWrapper{
         height: 100%;
     }
-    .bccT{
-        gap: 5px;
+    .bccT h1, .genesys h1{
+        font-size: 23px;
     }
+    .bccT h2, .genesys h2{
+        font-size: 19px;
+    }
+    /* .bccT{
+        gap: 5px;
+    } */
 }
