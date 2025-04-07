@@ -2,6 +2,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -10;
 }
 .portfolWrapper{
     width: 95%;
@@ -106,7 +107,7 @@
 
 @media screen and (max-width: 650px) {
     .portfolWrapper{
-        margin-top: 50px;
+        margin-top: 70px;
         padding-left: 20px;
         width: 90%;
         justify-content: flex-start;

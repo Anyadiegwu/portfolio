@@ -219,7 +219,11 @@
     .conBW{
         margin-top: 30px;
     }
+    .infor{
+        margin-left: 5vw;
+    }
     .inforW{
-        width: 70%;
+        width: 100%;
+        justify-content: flex-start;
     }   
 }

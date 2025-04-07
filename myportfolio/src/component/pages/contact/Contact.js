@@ -59,13 +59,13 @@ function Contact() {
                             <i><FaPhoneAlt /></i>
                           </div>
                           <Link to="tel:+2348102680872">(+234) 8102680872</Link>
+                      </div>
+                      <div className='infor'>
+                        <div className='contactIcon'>
+                          <i><GrMail /></i>
                         </div>
-                        <div className='infor'>
-                          <div className='contactIcon'>
-                            <i><GrMail /></i>
-                          </div>
-                          <a href='mailto:victoranyadiegwu610@gmail.com'>victoranyadiegwu610@gmail.com</a>
-                        </div>
+                        <a href='mailto:victoranyadiegwu610@gmail.com'>victoranyadiegwu610@gmail.com</a>
+                      </div>
                       </div>
                   </div>
                 </div>
