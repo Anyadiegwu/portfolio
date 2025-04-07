@@ -441,6 +441,12 @@
     .skillWrapper h1{
         font-size: 40px; 
     }
+    .bccT h1, .genesys h1{
+        font-size: 26px;
+    }
+    .bccT h2, .genesys h2{
+        font-size: 22px;
+    }
     .aboutBT{
         width: 100%;
         height: 100%;
