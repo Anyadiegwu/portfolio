@@ -411,13 +411,14 @@
         padding-left: 30px;
         width: 87%;
         height: 90%;
-        margin-top: 50px;
+        margin-top: 110px;
         margin-bottom: 0;
         justify-content: flex-start;
         padding-bottom: 0;
     }
     .aboutTWrapper{
         height: 80%;
+        gap: 0;
     }
     .aboutB{
         width: 95%;

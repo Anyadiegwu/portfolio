@@ -92,7 +92,8 @@
     .projectWrapper{
         width: 92%;
         height: 80%;
-        padding-left: 28px;
+        padding-left: 6vw;
+        justify-content: flex-start;
     }
     .projectL img{
         width: 96%;

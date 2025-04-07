@@ -6,13 +6,9 @@ import { Link } from 'react-router-dom';
 import BackBtn from '../../../assest/backBtn/BackBtn';
 import login from '../../../assest/images/hrLoginPg.jpg';
 
-// , { useState }
 
 function Dice() {
-//   const [navBar, setNavBar] = useState(true)
-//   const allow = (data) =>{
-//       setNavBar(data)  
-//   }
+
   return (
     <div className='introPg'>
     <div className='pSideBar'>

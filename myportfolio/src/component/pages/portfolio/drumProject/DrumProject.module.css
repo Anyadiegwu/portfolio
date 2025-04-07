@@ -8,10 +8,6 @@
 .project{
     width: 70%;
     height: 95%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-end; */
-    /* justify-content: flex-end; */
 }
 .projectWrapper a{
     text-decoration: none;
@@ -98,7 +94,8 @@
     .projectWrapper{
         width: 92%;
         height: 80%;
-        padding-left: 28px;
+        padding-left: 6vw;
+        justify-content: flex-start;
     }
     .projectL img{
         width: 96%;

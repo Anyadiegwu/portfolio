@@ -6,13 +6,9 @@ import { Link } from 'react-router-dom';
 import BackBtn from '../../../assest/backBtn/BackBtn';
 import register from '../../../assest/images/register.jpg';
 
-// , { useState } 
 
 function Dice() {
-//   const [navBar, setNavBar] = useState(true)
-//   const allow = (data) =>{
-//       setNavBar(data)  
-//   }
+
   return (
     <div className='introPg'>
         <div className='pSideBar'>
@@ -39,15 +35,6 @@ function Dice() {
                         <Link to="https://register-eta-self.vercel.app/" target='blank'>Page</Link>
                         <Link to="https://github.com/Anyadiegwu/register-pg" target='blank'>Github</Link> 
                     </div>
-                    {/* <Link to="">
-                        <img src={dice} alt='Project_Image'/>
-                    </Link>
-                    <p>Drum Project comes from the love for music. 
-                        This is the beginning of having users make what 
-                        they love and can be seen as a symbol of Joy. 
-                        Enjoy as your explore
-                    </p>
-                    <Link to="">Play now</Link> */}
                 </div>
             </div>
             <div className={style.pWBtn}>

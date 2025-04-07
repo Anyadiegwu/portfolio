@@ -186,6 +186,12 @@
     }
 }
 @media screen and (max-width: 650px) {
+    .conBody h1{
+        font-size: 40px;
+    }
+    .conBody h2{
+        font-size: 25px;
+    }
     .contactPg{
         height: 100%;
         padding-bottom: 30px;
@@ -214,6 +220,6 @@
         margin-top: 30px;
     }
     .inforW{
-        width: 60%;
+        width: 70%;
     }   
 }
