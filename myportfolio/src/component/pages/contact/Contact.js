@@ -102,7 +102,7 @@ function Contact() {
                   </a> 
                   {/* </div>
                   <div className='media'> */}
-                  <a href='https://www.github.com/Anyadiegwu' className='media'>
+                  <a href='https://www.github.com/Anyadiegwu' target='blank' className='media'>
                     <div className='contactIcon'>
                       <i><BsGithub /></i>
                     </div>
@@ -110,7 +110,7 @@ function Contact() {
                   </a> 
                   {/* </div>
                   <div className='media'> */}
-                  <Link to="https://api.whatsapp.com/send?phone=2348102680872&text=Hi,%20Victor%20Anyadiegwu%20I need%20more%20information%20about%20concerning your application.%20please%20contact%20me." 
+                  <Link to="https://api.whatsapp.com/send?phone=2348102680872&text=Hi,%20Victor%20Anyadiegwu%20I need%20more%20information%20concerning your application.%20please%20contact%20me." 
                   className='media'>
                     <div className='contactIcon'>
                       <i><IoLogoWhatsapp /></i>
