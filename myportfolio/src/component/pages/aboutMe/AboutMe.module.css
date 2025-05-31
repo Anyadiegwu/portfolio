@@ -1,17 +1,16 @@
 .aboutme{
     width: 97%;
-    height: 60%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 }
 .aboutTWrapper{
     width: 70%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .aboutTitle{
     font-family: 'IBM Plex Sans', sans-serif;
@@ -53,12 +52,12 @@
     letter-spacing: 0px;
     text-align: center;
     color: #ffffff;
-    width: 800px;
-    height: 116px
+    width: 100%;
+    height: fit-content;
 }
 .techskill{
     width: 83%;
-    height: 100%;
+    margin-top: 30px;
 }
 .techskill h2, .techskills h2{
     font-family: 'KoHo', sans-serif;
@@ -73,7 +72,7 @@
 }
 .skillSet{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .skilltab{
     max-width: 120px;
@@ -106,22 +105,27 @@
 
 .card{
     position: absolute;
-    top: 5%;
-    left: 68%;
+    top: 4%;
+    left: 70%;
+    z-index: -1;
 }
 .card img{
-    width: 350px;
+    width: 100%;
+}
+.abbtWrap{
+    width: 97%;
+    height: 90%;
 }
 .aboutBT{
-    width: 90%;
-    height: 80vh;
+    width: 100%;
+    height: 85%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 .aboutBWrapper{
-    width: 90%;
-    height: 70%;
+    width: 92%;
+    height: 85%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -141,6 +145,10 @@
     height: 100%;
     gap: 10px;
     width: 78%;
+}
+.skillSets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 .techskills{
     width: 80%;
@@ -204,6 +212,13 @@
 }
 
 /* About me BCC Pg */
+.bcc, .genesys{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .bccT{
     display: flex;
     align-items: center;
@@ -231,18 +246,32 @@
     letter-spacing: 0em;
     text-align: left;
 }
-.bccImg img{
+.bccImg, .provepic{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    gap: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.bccImg img:nth-child(1){
     width: 130px;
-    position: absolute;
+    object-fit: contain;
+    position: relative;
+}
+.bccImg img:nth-child(2){
+    width: 125px;
+    height: 130px;
+    position: relative;
 }
 
 /* About me genesys page */
 .genesysWrap{
-    width: 98%;
+    width: 90%;
     height: 70%;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 .genesysT{
     display: flex;
@@ -272,7 +301,7 @@
     text-align: left;
 }
 .genesysP{
-    width: 844px;
+    width: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -304,7 +333,7 @@
 .genesys img:nth-child(1){
     width: 130px;
     object-fit: contain;
-    position: absolute;
+    position: relative;
     top: 75%;
 }
 .genesys img:nth-child(2){
@@ -312,7 +341,132 @@
     width: 150px;
 }
 .learnableCert{
-    position: absolute;
+    position: relative;
     top: 75%;
-    left: 50%;
+    left: 0%;
+}
+.pWrapper{
+    padding: 30px 0;
+}
+.profileBtn button{
+    background: linear-gradient(to right, #FFE597, #AAFF82);
+    width: Hug (180px);
+    height: Hug (48px);
+    padding: 9.5px 12px 9.5px 12px;
+    border-radius: 100px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: none;
+}
+.profileBtn a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 950px) {
+    .abbtWrap{
+        width: 100%;
+    }
+    .aboutBT{
+        width: 100%;
+    }
+    .aboutBWrapper{
+        width: 90%;
+    }
+    .aboutTW{
+        width: 80%;       
+        align-items: flex-end;
+    }
+    .aboutTTW{
+        width: 100%;
+    }
+    .skillSets{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .techskills{
+        width: 90%;
+    }
+    .genesysWrap{
+        width: 95%;
+    }
+    .genesysP{
+        width: 100%;
+    }
+    .aboutB{
+        width: 100%;
+    }
+    .bccT h1, .genesys h1{
+        font-size: 28px;
+    }
+    .bccT h2, .genesys h2{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .aboutme{
+        padding-left: 30px;
+        width: 90%;
+        height: 90%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .abbtWrap{
+        height: 90%;
+        margin-top: 30px;
+        width: 90%;
+        padding-left: 30px;
+    }
+    .aboutTW{
+        width: 100%;
+        height: 80%;
+    }
+    .aboutTTW{
+        width: 100%;
+        height: 100%;
+    }
+    .skillWrapper h1{
+        font-size: 40px; 
+    }
+    .aboutBT{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .aboutBWrapper{
+        width: 100%;
+        height: 90%;
+        display: block;
+        padding-top: 0px;
+    }
+    .aboutTWrapper{
+        width: 99%;
+        height: 100%;
+    }
+    .card{
+        top: 10%;
+        left: 50%;
+    }
+    .genesysWrap{
+        margin-top: 0px;
+        padding-left: 30px;
+        width: 90%;
+    }
+    .bcc, .genesys{
+        width: 100%;
+    } 
+    .genesysP{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .abbtWrap{
+        height: 135%;
+    }
+    .aboutBWrapper{
+        height: 100%;
+    }
 }

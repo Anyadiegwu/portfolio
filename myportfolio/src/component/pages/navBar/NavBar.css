@@ -27,3 +27,17 @@
     padding-bottom: 2px;
     border-bottom: 2px solid #FEBD81;
 }
+@media screen and (max-width: 750px) {
+    .navBar{
+        width: 100%;
+        height: 100%;
+    }
+    .navBar ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        gap: 0px;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }  
+}

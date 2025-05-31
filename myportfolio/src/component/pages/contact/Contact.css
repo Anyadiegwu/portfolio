@@ -1,9 +1,20 @@
+.contactPg{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.contactPgW{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
 .contactBWrapper{
     width: 100%;
     height: 15%;
     display: flex;
     align-items: flex-end;
-
 }
 .contactBtn{
     width: 96%;
@@ -12,22 +23,46 @@
     justify-content: space-between;
 }
 .contactWrapper{
-    width: 95%;
+    width: 100%;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.profileCBtn button{
+    background: linear-gradient(to right, #FFE597, #AAFF82);
+    width: Hug (180px);
+    height: Hug (48px);
+    padding: 9.5px 12px 9.5px 12px;
+    border-radius: 100px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: none;
+}
+.profileCBtn a{
+    text-decoration: none;
+    color: black;
+}
 .contact{
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 .contactWrapper p:nth-child(1){
+    font-size: 1em;
+    z-index: 99;
     color: #D4D4D4;
 }
+.conBW{
+    width: 100%;
+}
 .conBWr{
-    width: 150%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -105,20 +140,24 @@
 .contactIcon i svg{
     width: 20px;
 }
-.mediaW{
-    width: 150%;
+.mediaWWrappe{
+    width: 100%;
+}
+.mediaWWrappe .mediaW{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.media{
+.mediaW a{
     display: flex;
+    text-decoration: none;
     align-items: center;
     gap: 5px;
 }
-.media a{
+.media p{
     font-family: IBM Plex Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0px;
@@ -126,4 +165,55 @@
     color: #EEEEEE;
     text-decoration: none;
     border-bottom: 1px solid #EEEEEE;
+}
+@media screen and (max-width: 750px) {
+    .conBody h1{
+        font-size: 45px;
+    }
+    .media p{
+        display: none;
+    }
+    .media .contactIcon{
+        width: 42px;
+        height: 42px;
+    }
+    .media .contactIcon i{
+        height: 34px;
+        width: 34px;
+    }
+    .media .contactIcon i svg{
+        width: 25px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .contactPg{
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .contactPgW{
+        height: 90%;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .contactBWrapper{
+        height: 10%;
+    }
+    .contactBtn{
+        justify-content: flex-end;
+    }
+    .profileCBtn button{
+        padding: 9px 11px;
+    }
+    .contact{
+        width: 90%;
+    }
+    .contactWrapper{
+        height: 100%;
+    }
+    .conBW{
+        margin-top: 30px;
+    }
+    .inforW{
+        width: 60%;
+    }   
 }

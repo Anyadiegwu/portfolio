@@ -4,10 +4,11 @@ import SideBar from '../sideBar/SideBar';
 import starBig from "../../assest/images/starbig.png";
 import starSmall from "../../assest/images/starsmall.png";
 import victor from "../../assest/images/victor.jpg";
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 
 function Intro() {
+ 
   return (
     <div className='introPg'>
         <SideBar />
@@ -21,8 +22,10 @@ function Intro() {
         </div>
         <div className='intro'>
             <div className='introN'>
-                <h1>Hello, I'm Victor, </h1>
-                <span> A Frontend Developer.</span>
+                <section>
+                    <h1>Hello, I'm Victor, </h1>
+                    <span> A Frontend Developer.</span>
+                </section>
             </div>
             <div className='myImageWrapper'>
                 <div className='myImage'> 
@@ -30,10 +33,9 @@ function Intro() {
                 </div>
             </div>
             <div className='introDes'>
-                <p> I'm a dedicated and enthusiastic product designer with a strong passion for creating user-centered experiences.
-                    While designing to solve problems, I focus on the need to deliver effective conversion and align projects 
-                    with business goals and objectives. Beyond my professional expertise, I have passion for nature and the solar system. 
-                    This drives me to approach design challenges with a sense of wonder and a commitment to delivering exceptional experiences.</p>
+                    <p className='detSp1'>I’m a dedicated and enthusiastic a frontend developer with a passion for <span>nature and frontend development skills. </span> 
+                    I not only specialize in crafting visually appealing and interactive designs that aligns with business goals but also <span> creating user-centered experiences, </span> 
+                    It's like the way nature seamlessly connects and aligns with the needs of its inhabitants...</p>
             </div>
             <div className='introBtn'>
                 <button type='btn'>

@@ -1,39 +1,40 @@
+.mysidebar{
+    position: relative;
+}
 .sidePlanet{
     position: absolute;
     width: 65%;
     max-width: 85%;
-    border: 1px solid red;
     height: 70%;
-    left: -26%;
+    left: -320px;
     z-index: 0;
-    top: 12%;
 }
 .sideMars img{
     width: 50px;
     position: absolute;
-    left: 62%;
-    z-index: 0;
-    top: 2%;
+    left: 520px;
+    z-index: -1;
+    top: 110px;
 }
 .sideUranus img{
     width: 60px;
     position: absolute;
-    z-index: 0;
-    left: 69%;
-    top: 93%;
+    z-index: -1;
+    left: 530px;
+    top: 470px;
 }
 .sideEarth img{
     width: 260px;
     position: absolute;
-    left: 25%;
+    left: 200px;
     z-index: 0;
-    top: 30%;
+    top: 190px;
 }
 .sideSpinner{
     position: absolute;
-    top: 10%;
+    top: 120px;
     z-index: 0;
-    left: 20%;
+    left: 170px;
     width: 410px;
     height: 410px; 
     border-bottom: 2px solid #FFFFFF;   
@@ -69,14 +70,18 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 .sideBarLink a:hover{
-    color: #FEBD81;
+    background: linear-gradient(270deg, #FEBD81 11.87%, #FFE598 55.02%, #BFF4A6 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 24px;
     font-family: 'IBM Plex Sans', sans-serif;
     padding-bottom: 2px;
     border-bottom: 2px solid #FEBD81;
 }
 .sideBarLink .active{
-    color: #FEBD81;
+    background: linear-gradient(270deg, #FEBD81 11.87%, #FFE598 55.02%, #BFF4A6 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 24px;
     font-family: 'IBM Plex Sans', sans-serif;
     padding-bottom: 2px;
@@ -97,7 +102,7 @@
 }
 .sideBarLink3{
     position: absolute;
-    top: 290px;
+    top: 295px;
     left: 130px;
 }
 .sideBarLink4{
@@ -140,5 +145,30 @@
 @media screen  and (max-width: 900px){
     .sidePlanet{
         width: 52%;
+        left: -410px;
+    }
+    .sideBarLink1{
+        left: 10px;
+    }
+    .sideBarLink2{
+        top: 210px;
+        left: 60px;
+    }
+    .sideBarLink3{
+        left: 55px;
+    }
+    .sideBarLink4{
+        left: 45px;
+    }
+    .sideBarLink5{
+        left: 10px;
+    }
+}
+@media screen  and (max-width: 650px){
+    .sidePlanet{
+        display: none;
+    }
+    .sideBarLink{
+        display: none;
     }
 }

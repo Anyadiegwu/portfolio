@@ -4,12 +4,16 @@ import uranus from "../../assest/images/uranus.png";
 import earth from "../../assest/images/earth.png";
 import mars from "../../assest/images/mars.png";
 import {NavLink} from 'react-router-dom';
+import Menu from '../menu/Menu';
 
 
 
-function SideBar() {
+function SideBar(show) {
+
   return (
-    <div>
+    <div className="mysidebar">
+      <Menu />
+
         <div className='sidePlanet'>
             <div className='sideEarth'>
                 <div className='sideSpinner'>
