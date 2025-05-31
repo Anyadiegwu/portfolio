@@ -2,6 +2,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -10;
 }
 .portfolWrapper{
     width: 95%;
@@ -103,23 +104,18 @@
     text-decoration: none;
     color: black;
 }
-/* Projects.js */
-.pWBtn{
-    position: absolute;
-    bottom: 6%;
-    left: 18%;
-}
-.projectWrapper{
-    overflow-y: scroll;
-    
-}
+
 @media screen and (max-width: 650px) {
     .portfolWrapper{
-        margin-top: 0px;
-        padding-left: 30px;
+        margin-top: 70px;
+        padding-left: 20px;
         width: 90%;
+        justify-content: flex-start;
     }
     .portfolio{
         width: 100%;
     } 
+    .aboutTitle{
+        display: none;
+    }
 }

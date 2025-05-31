@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Contact.css';
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -13,10 +13,8 @@ import { GrMail, GrLinkedinOption } from 'react-icons/gr';
 
 
 function Contact() {
-  const [navBar, setNavBar] = useState(true)
-  const allow = (data) =>{
-      setNavBar(data)  
-  }
+
+
   return (
     <div className='introPg'>
       <div>
@@ -61,13 +59,13 @@ function Contact() {
                             <i><FaPhoneAlt /></i>
                           </div>
                           <Link to="tel:+2348102680872">(+234) 8102680872</Link>
+                      </div>
+                      <div className='infor'>
+                        <div className='contactIcon'>
+                          <i><GrMail /></i>
                         </div>
-                        <div className='infor'>
-                          <div className='contactIcon'>
-                            <i><GrMail /></i>
-                          </div>
-                          <a href='mailto:victoranyadiegwu610@gmail.com'>victoranyadiegwu610@gmail.com</a>
-                        </div>
+                        <a href='mailto:victoranyadiegwu610@gmail.com'>victoranyadiegwu610@gmail.com</a>
+                      </div>
                       </div>
                   </div>
                 </div>
@@ -104,7 +102,7 @@ function Contact() {
                   </a> 
                   {/* </div>
                   <div className='media'> */}
-                  <a href='https://www.github.com/Anyadiegwu' className='media'>
+                  <a href='https://www.github.com/Anyadiegwu' target='blank' className='media'>
                     <div className='contactIcon'>
                       <i><BsGithub /></i>
                     </div>
@@ -112,7 +110,7 @@ function Contact() {
                   </a> 
                   {/* </div>
                   <div className='media'> */}
-                  <Link to="https://api.whatsapp.com/send?phone=2348102680872&text=Hi,%20Victor%20Anyadiegwu%20I need%20more%20information%20about%20concerning your application.%20please%20contact%20me." 
+                  <Link to="https://api.whatsapp.com/send?phone=2348102680872&text=Hi,%20Victor%20Anyadiegwu%20I need%20more%20information%20concerning your application.%20please%20contact%20me." 
                   className='media'>
                     <div className='contactIcon'>
                       <i><IoLogoWhatsapp /></i>

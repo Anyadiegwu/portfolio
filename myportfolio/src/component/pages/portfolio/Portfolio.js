@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from "./Portfolio.module.css";
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -7,13 +7,13 @@ import moon from '../../assest/images/Moon.png';
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import vector from '../../assest/images/vector.png'
-
+// , { useState }
 
 function Portfolio() {
-  const [navBar, setNavBar] = useState(true)
-  const allow = (data) =>{
-      setNavBar(data)  
-  }
+  // const [navBar, setNavBar] = useState(true)
+  // const allow = (data) =>{
+  //     setNavBar(data)  
+  // }
   return (
     <div className='introPg'>
       <div>
@@ -46,7 +46,7 @@ function Portfolio() {
               <div className={style.pWrapper}>
                 <div className={style.profileBtn}>
                   <button type={style.btn}>
-                    <Link to='/portfolio/projects'>Next Slide...</Link>
+                    <Link to='/portfolio/dice'>Next Slide...</Link>
                   </button>
                 </div>
               </div>

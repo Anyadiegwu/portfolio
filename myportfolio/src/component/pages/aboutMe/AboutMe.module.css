@@ -96,7 +96,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.pWrapper{
+.pWrapper, .pWrapperBcc{
     display: flex;
     justify-content: flex-end;
 }
@@ -345,7 +345,7 @@
     top: 75%;
     left: 0%;
 }
-.pWrapper{
+.pWrapper, .pWrapperBcc{
     padding: 30px 0;
 }
 .profileBtn button{
@@ -406,17 +406,27 @@
         font-size: 24px;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .aboutme{
         padding-left: 30px;
-        width: 90%;
+        width: 87%;
         height: 90%;
+        margin-top: 110px;
         margin-bottom: 0;
+        justify-content: flex-start;
         padding-bottom: 0;
     }
+    .aboutTWrapper{
+        height: 80%;
+        gap: 0;
+    }
+    .aboutB{
+        width: 95%;
+        display: flex;
+        justify-content: flex-start;
+    }
     .abbtWrap{
-        height: 90%;
-        margin-top: 30px;
+        margin-top: 110px;
         width: 90%;
         padding-left: 30px;
     }
@@ -430,6 +440,12 @@
     }
     .skillWrapper h1{
         font-size: 40px; 
+    }
+    .bccT h1, .genesys h1{
+        font-size: 26px;
+    }
+    .bccT h2, .genesys h2{
+        font-size: 22px;
     }
     .aboutBT{
         width: 100%;
@@ -447,26 +463,42 @@
         height: 100%;
     }
     .card{
-        top: 10%;
-        left: 50%;
+        top: 18%;
+        left: 48%;
     }
     .genesysWrap{
-        margin-top: 0px;
+        margin-top: 60px;
         padding-left: 30px;
-        width: 90%;
+        justify-content: flex-start;
+        width: 85%;
     }
     .bcc, .genesys{
         width: 100%;
+        gap: 0px;
     } 
     .genesysP{
         width: 100%;
     }
+    .pWrapper{
+        padding: 0px 0 20px;
+        margin-top: -20px;
+    }
+    .pWrapperBcc{
+        padding: 0px 0 20px;
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 500px) {
-    .abbtWrap{
-        height: 135%;
-    }
     .aboutBWrapper{
         height: 100%;
     }
+    .bccT h1, .genesys h1{
+        font-size: 23px;
+    }
+    .bccT h2, .genesys h2{
+        font-size: 19px;
+    }
+    /* .bccT{
+        gap: 5px;
+    } */
 }

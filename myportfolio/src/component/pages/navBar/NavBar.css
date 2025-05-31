@@ -39,5 +39,9 @@
         gap: 0px;
         align-items: flex-end;
         justify-content: space-evenly;
+        padding-top: 20px;
     }  
+    .navBar ul li a{
+        font-size: 20px;
+    }
 }

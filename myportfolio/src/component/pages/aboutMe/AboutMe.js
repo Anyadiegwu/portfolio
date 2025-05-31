@@ -28,9 +28,6 @@ function AboutMe() {
             </span>
               <div className={style.skillWrapper}>
                 <h1>My Skills</h1>
-                {/* <p>As a product designer, I bring a diverse set of skills to the table. I am proficient in 
-                  industry-standard design tools such as Figma, Sketch, and Adobe Creative Suite, allowing me to create visually appealing and interactive designs 
-                  (just like this one you are currently viewing). Moreover, my skills and experience covers both the technical and non-technical horizon.</p> */}
                 <p>As a frontend developer, I bring a diverse set of skills to the table. I am proficient 
                   in popular developer tools such as Visual Studio Code, Git, and npm, which allow me to 
                   efficiently write and manage code. Moreover, my skills and experience covers both the 

@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-// import './AboutMe.css'
+import React from 'react'
 import style from './AboutMe.module.css'
 import SideBar from '../sideBar/SideBar';
 import Star from '../../assest/stars/Star';
@@ -8,13 +7,13 @@ import { MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import BLogo from '../../assest/images/BCC.jpg';
 import BCert from "../../assest/images/breketecert.jpg"
-
+// , { useState }
 
 function AboutCCPg() {
-  const [navBar, setNavBar] = useState(true)
-  const allow = (data) =>{
-      setNavBar(data)  
-  }
+//   const [navBar, setNavBar] = useState(true)
+//   const allow = (data) =>{
+//       setNavBar(data)  
+//   }
   return (
     <div className='introPg'>
         <div>
@@ -55,7 +54,7 @@ function AboutCCPg() {
                     <img src={BLogo} alt='brekete logo' />
                     <img src={BCert} alt='brekete cert' />
                 </div>
-                <div className={style.pWrapper}>
+                <div className={style.pWrapperBcc}>
                   <div className={style.profileBtn}>
                     <button type={style.btn}>
                       <Link to='/aboutme/genesys'>Next Slide...</Link>
