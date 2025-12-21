@@ -8,7 +8,7 @@ import diceImage from "../assets/images/dicegame.jpg";
 // import genesys from "../assets/images/genesys.png";
 import victorImg from "../assets/images/victor.jpg";
 // import learnable from "../assets/images/LearnableCert.jpg";
-import hrImg from "../assets/images/hrLoginPg.jpg";
+import savoraImg from "../assets/images/savora.jpg";
 import registerImg from "../assets/images/register.jpg";
 import shopifyImg from "../assets/images/shopify.jpg";
 import drumImg  from "../assets/images/drumkit.jpg";
@@ -95,16 +95,16 @@ const Portfolio = () => {
       tech: ["React"]
     },
     {
-      title: "HR Dashboard",
-      description: "Human Resources management system for corporate businesses to monitor employee progress and welfare.",
-      image: hrImg,
-      links: { page: "https://hrproject-anyadiegwus-projects.vercel.app/", github: "https://github.com/Anyadiegwu/savecodes" },
-      tech: ["React"]
+      title: "Savora Restaurant",
+      description: "Exquisite fine dining experience in Lagos offering premium international cuisine crafted with the finest ingredients.",
+      image: savoraImg,
+      links: { page: "https://savora-restaurant-beta.vercel.app/", github: "https://github.com/Anyadiegwu/savora-restaurant" },
+      tech: ["TypeScript", "Vite + React"]
     }
   ];
 
   const skills = {
-    technical: ["HTML", "CSS", "JavaScript", "React", "Git", "Tailwind", "Node.js"],
+    technical: ["HTML", "CSS", "JavaScript", "React", "Vite+React", "Git", "Tailwind", "Node.js", "TypeScript", "Python"],
     nonTechnical: ["Empathizing", "Presentation", "Flexibility", "Time Management", "Continuous Learning", "Analytical Thinking", "Communication", "Collaboration"]
   };
 
@@ -257,7 +257,7 @@ const Portfolio = () => {
             <div className="about-text">
             <p>
                 I'm a dedicated frontend developer skilled in building responsive, performant web applications using modern tools and frameworks. 
-                Proficient in <span className="highlight-blue">React, JavaScript (ES6+), HTML/CSS, Tailwind CSS</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design.
+                Proficient in <span className="highlight-blue">React, JavaScript (ES6+), TypeScript, Python, HTML/CSS, Tailwind</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design.
             </p>              
               <div className="background-section">
                 <h3 className="section-subtitle">Background</h3>
