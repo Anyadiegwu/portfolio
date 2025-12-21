@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 import { Camera, Mail, Phone, Linkedin, Instagram, Github, ExternalLink, Menu, X, Sun, Moon } from 'lucide-react';
 import './Portfolio.css';
 import diceImage from "../assets/images/dicegame.jpg";
-// import bcc from "../assets/images/BCC.jpg";
-// import brekete from "../assets/images/breketecert.jpg";
-// import genesys from "../assets/images/genesys.png";
 import victorImg from "../assets/images/victor.jpg";
-// import learnable from "../assets/images/LearnableCert.jpg";
 import savoraImg from "../assets/images/savora.jpg";
 import registerImg from "../assets/images/register.jpg";
-import shopifyImg from "../assets/images/shopify.jpg";
+import shophubImg from "../assets/images/ShopHub.jpg";
 import drumImg  from "../assets/images/drumkit.jpg";
 import res from "../assets/images/My Resume.pdf"
 
@@ -25,11 +21,10 @@ function Star() {
 
   return <div className="star" style={style} />;
 }
-const Portfolio = () => {
+const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isDarkMode, setIsDarkMode] = useState(true);
 
   
   useEffect(() => {
@@ -38,7 +33,6 @@ const Portfolio = () => {
       const progress = (window.scrollY / totalHeight) * 100;
       setScrollProgress(progress);
 
-      // Update active section based on scroll position
       const sections = ['home', 'intro', 'about', 'skills', 'portfolio', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -81,11 +75,11 @@ const Portfolio = () => {
       tech: ["HTML", "CSS", "JavaScript", "React"]
     },
     {
-      title: "Shopify Dashboard",
-      description: "A replica of Shopify's dashboard page to help business owners manage their platform.",
-      image: shopifyImg,
-      links: { page: "https://shopify-challenge-xi.vercel.app/", github: "https://github.com/Anyadiegwu/shopify-challenge-" },
-      tech: ["HTML", "CSS", "JavaScript"]
+      title: "ShopHub",
+      description: "A modern e-commerce app with category filtering, dark mode, and sidebar cart for product browsing and shopping.",
+      image: shophubImg,
+      links: { page: "https://shophub-wine.vercel.app/", github: "https://github.com/Anyadiegwu/shophub" },
+      tech: ["Vite + React"]
     },
     {
       title: "Registration Page",
@@ -110,7 +104,6 @@ const Portfolio = () => {
 
   return (
     <div className={`portfolio ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      {/* Progress Bar */}
       <div className="progress-bar-container">
         <div 
           className="progress-bar"
@@ -118,13 +111,11 @@ const Portfolio = () => {
         />
       </div>
 
-      {/* Navigation */}
       <nav className="navbar">
         <div className="nav-content">
           <div className="nav-inner">
             <h1 className="logo">Victor</h1>
             
-            {/* Desktop Menu */}
             <ul className="desktop-menu">
               {['Home', 'Intro', 'About', 'Skills', 'Portfolio', 'Contact'].map((item) => (
                 <li key={item}>
@@ -136,8 +127,7 @@ const Portfolio = () => {
                   </button>
                 </li>
               ))}
-              
-              {/* Theme Toggle */}
+
               <li>
                 <button
                   onClick={() => setIsDarkMode(!isDarkMode)}
@@ -149,7 +139,6 @@ const Portfolio = () => {
               </li>
             </ul>
 
-            {/* Mobile Menu Button */}
             <div className="mobile-controls">
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
@@ -167,7 +156,6 @@ const Portfolio = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="mobile-menu">
               <ul>
@@ -187,7 +175,6 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      {/* Home Section */}
       <section id="home" className="section home-section">
         <div className="stars-container">
             {Array.from({ length: 100 }).map((_, i) => (
@@ -207,7 +194,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
       <section id="intro" className="section intro-section">
         <div className="container">
           <div className="intro-content">
@@ -231,12 +217,12 @@ const Portfolio = () => {
                 >
                   Resume
                 </a>
-                <a
-                  href="mailto:victoranyadiegwu610@gmail.com"
+                <Link
+                  to="/certificates"
                   className="btn hire-btn"
                 >
-                  Hire me
-                </a>
+                  Certificates
+                </Link>
               </div>
             </div>
             <p className="intro-text">
@@ -248,7 +234,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="section about-section">
         <div className="container">
           <div className="about-content">
@@ -285,7 +270,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section id="skills" className="section skills-section">
         <div className="container">
           <div className="skills-content">
@@ -318,7 +302,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Portfolio Section */}
       <section id="portfolio" className="section portfolio-section">
         <div className="container">
           <h2 className="gradient-title center">Portfolio Highlights</h2>
@@ -368,7 +351,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="section contact-section">
         <div className="container">
           <div className="contact-content">
@@ -424,7 +406,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <p>© {new Date().getFullYear()} Victor Anyadiegwu. All rights reserved.</p>
       </footer>
