@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Camera, Mail, Phone, Linkedin, Instagram, Github, ExternalLink, Menu, X, Sun, Moon } from 'lucide-react';
 import './Portfolio.css';
-import diceImage from "../assets/images/dicegame.jpg";
+import Spotify from "../assets/images/spotify.jpg";
 import victorImg from "../assets/images/victor.jpg";
 import savoraImg from "../assets/images/savora.jpg";
 import registerImg from "../assets/images/register.jpg";
@@ -61,11 +61,11 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
   
   const projects = [
     {
-      title: "Dice Game",
-      description: "A popular dice rolling game developed using HTML, CSS, JavaScript, and React. Roll to compete!",
-      image: diceImage,
-      links: { page: "https://dice-challenge-game.vercel.app", github: "https://github.com/Anyadiegwu/dice-challenge-game" },
-      tech: ["HTML", "CSS", "JavaScript", "React"]
+      title: "Spotify Clone",
+      description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
+      image: Spotify,
+      links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
+      tech: [" Vite + React"]
     },
     {
       title: "Drum Kit",
