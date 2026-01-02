@@ -65,14 +65,14 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
       image: Spotify,
       links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
-      tech: [" Vite + React"]
+      tech: ["Vite + React"]
     },
     {
       title: "Lms Page",
       description: "A modern, full-stack Learning Management System with secure Google & email/password authentication, built with React, Vite, and Express.",
       image: lmsImg,
       links: { page: "https://lms-silk-phi.vercel.app/", github: "https://github.com/Anyadiegwu/lms" },
-      tech: ["React"]
+      tech: ["Vite + React"]
     },
     {
       title: "Drum Kit",
