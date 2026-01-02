@@ -5,7 +5,7 @@ import './Portfolio.css';
 import Spotify from "../assets/images/spotify.jpg";
 import victorImg from "../assets/images/victor.jpg";
 import savoraImg from "../assets/images/savora.jpg";
-import registerImg from "../assets/images/register.jpg";
+import lmsImg from "../assets/images/lms.jpg";
 import shophubImg from "../assets/images/ShopHub.jpg";
 import drumImg  from "../assets/images/drumkit.jpg";
 import res from "../assets/images/My Resume.pdf"
@@ -68,6 +68,13 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       tech: [" Vite + React"]
     },
     {
+      title: "Lms Page",
+      description: "A modern, full-stack Learning Management System with secure Google & email/password authentication, built with React, Vite, and Express.",
+      image: lmsImg,
+      links: { page: "https://lms-silk-phi.vercel.app/", github: "https://github.com/Anyadiegwu/lms" },
+      tech: ["React"]
+    },
+    {
       title: "Drum Kit",
       description: "An interactive musical instrument app born from love of music. Create beats and joy!",
       image: drumImg,
@@ -80,13 +87,6 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       image: shophubImg,
       links: { page: "https://shophub-wine.vercel.app/", github: "https://github.com/Anyadiegwu/shophub" },
       tech: ["Vite + React"]
-    },
-    {
-      title: "Registration Page",
-      description: "A simple, well-designed and user-friendly registration page built with React.",
-      image: registerImg,
-      links: { page: "https://register-eta-self.vercel.app/", github: "https://github.com/Anyadiegwu/register-pg" },
-      tech: ["React"]
     },
     {
       title: "Savora Restaurant",
