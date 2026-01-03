@@ -7,8 +7,8 @@ import victorImg from "../assets/images/victor.jpg";
 import savoraImg from "../assets/images/savora.jpg";
 import lmsImg from "../assets/images/lms.jpg";
 import shophubImg from "../assets/images/ShopHub.jpg";
-import drumImg  from "../assets/images/drumkit.jpg";
-import res from "../assets/images/My Resume.pdf"
+import chatBotImg  from "../assets/images/bank-assistantImg.jpg";
+import res from "../assets/images/My Resume.pdf";
 
 
 function Star() {
@@ -65,28 +65,28 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
       image: Spotify,
       links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
-      tech: ["Vite + React"]
+      tech: ["Vite + React", "CSS", "HTML", "JavaScript", "Spotify API"]
     },
     {
       title: "Lms Page",
       description: "A modern, full-stack Learning Management System with secure Google & email/password authentication, built with React, Vite, and Express.",
       image: lmsImg,
       links: { page: "https://lms-silk-phi.vercel.app/", github: "https://github.com/Anyadiegwu/lms" },
-      tech: ["Vite + React"]
+      tech: ["Vite + React", "Node.js", "Express" ]
     },
     {
-      title: "Drum Kit",
-      description: "An interactive musical instrument app born from love of music. Create beats and joy!",
-      image: drumImg,
-      links: { page: "https://drum-kit-react.vercel.app/", github: "https://github.com/Anyadiegwu/drum-kit" },
-      tech: ["HTML", "CSS", "JavaScript", "React"]
+      title: "Bank AI Assistant",
+      description: "AI-powered banking assistant that intelligently handles customer inquiries through smart categorization and conversational flow.",
+      image: chatBotImg,
+      links: { page: "https://bank-ai-react-assistant.vercel.app/", github: "https://github.com/Anyadiegwu/bank-ai-react-assistant" },
+      tech: ["HTML", "CSS", "JavaScript", "React", "Python", "FastAPI", "Gemini API"]
     },
     {
       title: "ShopHub",
       description: "A modern e-commerce app with category filtering, dark mode, and sidebar cart for product browsing and shopping.",
       image: shophubImg,
       links: { page: "https://shophub-wine.vercel.app/", github: "https://github.com/Anyadiegwu/shophub" },
-      tech: ["Vite + React"]
+      tech: ["Vite + React", "CSS", "HTML"]
     },
     {
       title: "Savora Restaurant",
