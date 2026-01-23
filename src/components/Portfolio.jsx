@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Camera, Mail, Phone, Linkedin, Instagram, Github, ExternalLink, Menu, X, Sun, Moon } from 'lucide-react';
 import './Portfolio.css';
-import Spotify from "../assets/images/spotify.jpg";
-import victorImg from "../assets/images/victor.jpg";
+// import Spotify from "../assets/images/spotify.jpg";
+import Shopify from "../assets/images/Shopify.jpg";
+import victorImg from "../assets/images/picture.jpg.jpeg";
 import savoraImg from "../assets/images/savora.jpg";
 import lmsImg from "../assets/images/lms.jpg";
 import shophubImg from "../assets/images/ShopHub.jpg";
 import chatBotImg  from "../assets/images/bank-assistantImg.jpg";
-import res from "../assets/images/My Resume.pdf";
+import res from "../assets/images/Victor_Anyadiegwu_Resume.pdf";
 
 
 function Star() {
@@ -60,13 +61,13 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
 
   
   const projects = [
-    {
-      title: "Spotify Clone",
-      description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
-      image: Spotify,
-      links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
-      tech: ["Vite + React", "CSS", "HTML", "JavaScript", "Spotify API"]
-    },
+    // {
+    //   title: "Spotify Clone",
+    //   description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
+    //   image: Spotify,
+    //   links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
+    //   tech: ["Vite + React", "CSS", "HTML", "JavaScript", "Spotify API"]
+    // },
     {
       title: "Lms Page",
       description: "A modern, full-stack Learning Management System with secure Google & email/password authentication, built with React, Vite, and Express.",
@@ -94,6 +95,13 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       image: savoraImg,
       links: { page: "https://savora-restaurant-beta.vercel.app/", github: "https://github.com/Anyadiegwu/savora-restaurant" },
       tech: ["TypeScript", "Vite + React"]
+    },
+    {
+      title: "Shopify Dashboard Clone",
+      description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
+      image: Shopify,
+      links: { page: "https://shopify-challenge-xi.vercel.app/", github: "https://github.com/Anyadiegwu/shopify-challenge-" },
+      tech: ["CSS", "HTML", "JavaScript"]
     }
   ];
 
@@ -367,20 +375,22 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
             </div>
             
             <div className="contact-info">
-              <a href="tel:+2348102680872" className="contact-item">
-                <div className="contact-icon">
-                  <Phone size={20} />
-                </div>
-                (+234) 8102680872
-              </a>
-              <a href="mailto:victoranyadiegwu610@gmail.com" 
-              className="contact-item"
-              >
-                <div className="contact-icon">
-                  <Mail size={20} />
-                </div>
-                victoranyadiegwu610@gmail.com
-              </a>
+              <div className='contact-info-wrapper'>
+                <a href="tel:+2348102680872" className="contact-item">
+                  <div className="contact-icon">
+                    <Phone size={20} />
+                  </div>
+                  (+234) 08102680872
+                </a>
+                <a href="mailto:victoranyadiegwu610@gmail.com" 
+                className="contact-item"
+                >
+                  <div className="contact-icon">
+                    <Mail size={20} />
+                  </div>
+                  victoranyadiegwu610@gmail.com
+                </a>
+              </div>
             </div>
             
             <div className="social-links">
@@ -388,7 +398,7 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
                 { icon: <Linkedin size={24} />, url: 'https://www.linkedin.com/in/victor-anyadiegwu-8286a9238', label: 'LinkedIn' },
                 { icon: <Instagram size={24} />, url: 'https://www.instagram.com/veek__thor', label: 'Instagram' },
                 { icon: <Github size={24} />, url: 'https://www.github.com/Anyadiegwu', label: 'Github' },
-                { icon: <Camera size={24} />, url: 'http://www.twitter.com/iam_veek_thor', label: 'X (Twitter)' }
+                { icon: <Camera size={24} />, url: 'http://www.x.com/iam_veek_thor', label: 'X (Twitter)' }
               ].map((social, index) => (
                 <a
                   key={index}
