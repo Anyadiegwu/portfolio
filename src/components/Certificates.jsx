@@ -4,7 +4,7 @@ import { ArrowLeft, X, Download, ExternalLink } from 'lucide-react';
 import './Certificates.css';
 import bccCert from '../assets/images/breketecert.jpg';
 import learnableCert from '../assets/images/LearnableCert.jpg';
-
+import iotCert from '../assets/images/IoT_Coursera_Certificate.jpeg';
 
 const Certificates = ({ isDarkMode }) => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -36,9 +36,18 @@ const Certificates = ({ isDarkMode }) => {
       issuer: "Genesys Tech Hub",
       date: "2022-2023",
       image: learnableCert,
-      description: "Product Development Internship - Full-Stack Development & Team Collaboration",
+      description: "Product Development Internship - Web Development & Team Collaboration",
       skills: ["React", "Team Collaboration", "Product Development", "User Research"]
     },
+    {
+      id: 3,
+      title: "Internet of Things (IoT) Certificate",
+      issuer: "Coursera",
+      date: "2026",
+      image: iotCert,
+      description: "Foundational IoT concepts covering connected devices, sensors, architectures, and data flow with emphasis on cloud integration and web applications",
+      skills: ["IoT Fundamentals", "Cloud Integration", "Data Flow", "API Consumption"]
+    }
 
   ];
 
