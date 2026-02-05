@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Camera, Mail, Phone, Linkedin, Instagram, Github, ExternalLink, Menu, X, Sun, Moon } from 'lucide-react';
 import './Portfolio.css';
-// import Spotify from "../assets/images/spotify.jpg";
+import Spotify from "../assets/images/spotify.jpg";
 import Shopify from "../assets/images/Shopify.jpg";
 import victorImg from "../assets/images/picture.jpg.jpeg";
 import savoraImg from "../assets/images/savora.jpg";
@@ -61,13 +61,6 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
 
   
   const projects = [
-    // {
-    //   title: "Spotify Clone",
-    //   description: "A Spotify-inspired music player clone built using HTML, CSS, JavaScript, and React. Play to enjoy! Remember to connect a device first",
-    //   image: Spotify,
-    //   links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
-    //   tech: ["Vite + React", "CSS", "HTML", "JavaScript", "Spotify API"]
-    // },
     {
       title: "Lms Page",
       description: "A modern, full-stack Learning Management System with secure Google & email/password authentication, built with React, Vite, and Express.",
@@ -81,6 +74,13 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
       image: chatBotImg,
       links: { page: "https://bank-ai-react-assistant.vercel.app/", github: "https://github.com/Anyadiegwu/bank-ai-react-assistant" },
       tech: ["HTML", "CSS", "JavaScript", "React", "Python", "FastAPI", "Gemini API"]
+    },
+    {
+      title: "Spotify Clone",
+      description: "A Spotify-inspired music player clone built with React and the Spotify Web API. Due to Spotify’s developer authorization rules, access is limited to approved users. To try the app, request access via email to be added to the authorized user list, then connect an active Spotify device to start playback.",
+      image: Spotify,
+      links: { page: "https://a-spotify-clone.vercel.app/", github: "https://github.com/Anyadiegwu/a-spotify-clone" },
+      tech: ["Vite + React", "JavaScript", "Spotify API"]
     },
     {
       title: "ShopHub",
