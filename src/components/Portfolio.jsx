@@ -233,11 +233,6 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
                 </Link>
               </div>
             </div>
-            {/* <p className="intro-text">
-                I'm a passionate frontend developer with a keen eye for crafting clean, intuitive, and visually stunning web experiences. 
-                Inspired by <span className="highlight-green">nature's seamless harmony</span>, I build user-centered interfaces that feel natural and effortless to use. 
-                Specializing in modern technologies like <span className="highlight-yellow">React, Tailwind CSS, and responsive design</span>, I turn ideas into interactive realities that delight users and drive results.
-            </p>             */}
             <p className="intro-text">
               I'm a passionate frontend developer focused on crafting clean, intuitive, and visually engaging web experiences. 
               Inspired by <span className="highlight-green">nature's seamless harmony</span>, I design user-centered interfaces that feel natural and effortless to use. 
@@ -253,10 +248,6 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
             <h2 className="gradient-title">About Me</h2>
             
             <div className="about-text">
-            {/* <p>
-                I'm a dedicated frontend developer skilled in building responsive, performant web applications using modern tools and frameworks. 
-                Proficient in <span className="highlight-blue">React, JavaScript (ES6+), TypeScript, Python, HTML/CSS, Tailwind</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design.
-            </p>               */}
               <p>
                 I'm a dedicated frontend developer skilled in building responsive, performant web applications using modern tools and frameworks. 
                 Proficient in <span className="highlight-blue">React, JavaScript (ES6+), TypeScript, Python, HTML/CSS, Tailwind</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design. 
