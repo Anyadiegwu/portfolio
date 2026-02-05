@@ -233,11 +233,16 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
                 </Link>
               </div>
             </div>
-            <p className="intro-text">
+            {/* <p className="intro-text">
                 I'm a passionate frontend developer with a keen eye for crafting clean, intuitive, and visually stunning web experiences. 
                 Inspired by <span className="highlight-green">nature's seamless harmony</span>, I build user-centered interfaces that feel natural and effortless to use. 
                 Specializing in modern technologies like <span className="highlight-yellow">React, Tailwind CSS, and responsive design</span>, I turn ideas into interactive realities that delight users and drive results.
-            </p>            
+            </p>             */}
+            <p className="intro-text">
+              I'm a passionate frontend developer focused on crafting clean, intuitive, and visually engaging web experiences. 
+              Inspired by <span className="highlight-green">nature's seamless harmony</span>, I design user-centered interfaces that feel natural and effortless to use. 
+              With experience in <span className="highlight-yellow">React, Tailwind CSS, and responsive design</span> and a growing foundation in <span className="highlight-blue">Internet of Things (IoT) systems and data integration</span>, I build modern web applications that connect ideas, devices, and users into interactive realities.
+            </p>
           </div>
         </div>
       </section>
@@ -248,10 +253,15 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
             <h2 className="gradient-title">About Me</h2>
             
             <div className="about-text">
-            <p>
+            {/* <p>
                 I'm a dedicated frontend developer skilled in building responsive, performant web applications using modern tools and frameworks. 
                 Proficient in <span className="highlight-blue">React, JavaScript (ES6+), TypeScript, Python, HTML/CSS, Tailwind</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design.
-            </p>              
+            </p>               */}
+              <p>
+                I'm a dedicated frontend developer skilled in building responsive, performant web applications using modern tools and frameworks. 
+                Proficient in <span className="highlight-blue">React, JavaScript (ES6+), TypeScript, Python, HTML/CSS, Tailwind</span>, and version control with <span className="highlight-yellow">Git</span>, I focus on creating seamless user experiences through clean code and thoughtful design. 
+                I also have foundational knowledge in <span className="highlight-green">Internet of Things (IoT) architectures and connected systems</span>, enabling me to understand how real-world device data integrates with cloud platforms and web applications.
+              </p>
               <div className="background-section">
                 <h3 className="section-subtitle">Background</h3>
                 
@@ -269,6 +279,15 @@ const Portfolio = ({ isDarkMode, setIsDarkMode }) => {
                     <p>
                         A transformative <span className="highlight-pink">product development internship</span> where I <span className="highlight-green">collaborated with cross-functional teams</span> to build a full-fledged 
                         <span className="highlight-blue"> Learning Management System app</span>. I conducted user research, usability testing, and contributed to iterative design—experiences that sharpened my skills in real-user-focused development.
+                    </p>
+                  </div>
+                  <div className="background-card">
+                    <h4 className="card-title">Coursera IoT Program (2026)</h4>
+                    <p>
+                      Completed a structured program in <span className="highlight-green">Internet of Things (IoT)</span>, exploring how 
+                      <span className="highlight-blue"> connected devices, sensors, and cloud platforms</span> exchange and process data. 
+                      This experience expanded my understanding of how real-world systems integrate with 
+                      <span className="highlight-pink"> modern web applications</span>, strengthening my ability to design data-driven user interfaces.
                     </p>
                   </div>
                 </div>
