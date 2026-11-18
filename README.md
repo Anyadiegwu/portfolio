@@ -1,179 +1,201 @@
-# Victor's Portfolio
+# Victor Anyadiegwu — Full-Stack & AI Engineer Portfolio
 
-A modern, responsive portfolio website showcasing my work as a Frontend Developer. Built with React and featuring a sleek dark/light mode toggle, smooth animations, and an intuitive user interface.
+A modern, responsive portfolio presenting my work across **full-stack software engineering**, **applied AI**, and **Internet of Things (IoT)** systems.
 
-![Portfolio Preview](public/favicon.svg)
+The site is built with the Next.js App Router, TypeScript, and Tailwind CSS. It is statically prerendered for fast delivery and includes project showcases, technical experience, skills, contact options, theme switching, and optimized media.
 
-## 🌟 Features
+## Features
 
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Dark/Light Mode**: Toggle between themes for comfortable viewing
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Interactive UI**: Engaging animations and hover effects
-- **Progress Bar**: Visual indicator of scroll position
-- **Portfolio Showcase**: Detailed project cards with live demos and GitHub links
-- **Certificates Page**: Dedicated page to display professional certifications
-- **Contact Section**: Multiple ways to get in touch with social media integration
+- Responsive single-page layout for mobile, tablet, and desktop
+- Light mode by default with a persistent manual dark-mode toggle
+- Smooth section navigation without adding fragment hashes to the URL
+- Active-section tracking and a page scroll-progress indicator
+- Typed, reusable React components for sections, cards, navigation, and controls
+- Project cards with live demo and source repository links
+- Downloadable résumé and direct email/telephone actions
+- Optimized local images using WebP and `next/image`
+- Custom multi-resolution `favicon.ico`
+- Accessible controls, visible focus states, and reduced-motion support
+- Statically prerendered homepage using Next.js Cache Components
 
-## 🚀 Live Demo
+## Technology Stack
 
-[View Live Portfolio](https://portfolio-gamma-eight-24.vercel.app/p)
+- **Framework:** Next.js 16 App Router
+- **Language:** TypeScript
+- **UI:** React 19
+- **Styling:** Tailwind CSS 4
+- **Icons:** Lucide React
+- **Fonts:** Geist and Geist Mono through `next/font`
+- **Package manager:** pnpm 12.18.0
+- **End-to-end testing:** Playwright with desktop and mobile Chromium
+- **Continuous integration:** GitHub Actions
+- **Deployment target:** Vercel or any compatible Node.js host
 
-## 🛠️ Technologies Used
+## Project Structure
 
-- **Frontend Framework**: React 19.2.0
-- **Build Tool**: Vite 7.2.4
-- **Routing**: React Router DOM 7.11.0
-- **Icons**: Lucide React 0.562.0
-- **Styling**: Custom CSS with CSS3 animations
-- **Deployment**: Vercel
-
-## 📂 Project Structure
-
-```
+```text
 portfolio/
-├── public/
-│   ├── favicon.svg
-│   └── favicon.jpg
-├── src/
-│   ├── assets/
-│   │   └── images/
-│   │       ├── certificates/
-│   │       ├── projects/
-│   │       └── profile/
+├── app/
 │   ├── components/
-│   │   ├── Portfolio.jsx
-│   │   ├── Portfolio.css
-│   │   ├── Certificates.jsx
-│   │   └── Certificates.css
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── index.css
-├── index.html
+│   │   ├── AboutSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   ├── ExperienceCard.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── ProfileImage.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   ├── SectionHeading.tsx
+│   │   ├── SectionScrollButton.tsx
+│   │   ├── SiteFooter.tsx
+│   │   ├── SiteHeader.tsx
+│   │   ├── SkillGroup.tsx
+│   │   ├── SkillsSection.tsx
+│   │   └── SocialLinks.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── portfolio-data.ts
+├── public/
+│   ├── documents/
+│   │   └── victor-anyadiegwu-resume.pdf
+│   └── images/
+│       ├── bank-ai-assistant.webp
+│       ├── lms.webp
+│       ├── savora.webp
+│       ├── shophub.webp
+│       ├── shopify.webp
+│       ├── spotify.webp
+│       └── victor-anyadiegwu.webp
+├── tests/
+│   └── e2e/
+│       ├── navigation.desktop.spec.ts
+│       ├── navigation.mobile.spec.ts
+│       └── portfolio.spec.ts
+├── .github/
+│   └── workflows/
+│       └── playwright.yml
+├── eslint.config.mjs
+├── next.config.ts
 ├── package.json
-├── vite.config.js
-└── README.md
+├── playwright.config.ts
+├── pnpm-lock.yaml
+└── tsconfig.json
 ```
 
-## 🎨 Sections
+Portfolio copy, navigation definitions, experience, skills, and project records are centralized in [`app/portfolio-data.ts`](app/portfolio-data.ts).
 
-1. **Home**: Welcome section with animated starfield background
-2. **Intro**: Brief introduction and professional summary
-3. **About**: Detailed background, education, and experience
-4. **Skills**: Technical and non-technical skills showcase
-5. **Portfolio**: Project cards with descriptions, tech stacks, and links
-6. **Contact**: Contact information and social media links
-7. **Certificates**: Dedicated page for professional certifications
+## Getting Started
 
-## 💼 Featured Projects
+### Requirements
 
-- **Spotify Clone**: Music player with Spotify API integration
-- **LMS Platform**: Learning Management System with authentication
-- **Bank AI Assistant**: AI-powered customer service chatbot
-- **ShopHub**: E-commerce application with cart functionality
-- **Savora Restaurant**: Fine dining restaurant website
+- Node.js 20.19 or newer
+- pnpm
 
-## 📦 Installation & Setup
+### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Anyadiegwu/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 🔧 Configuration
-
-### Environment Setup
-
-No environment variables required for basic setup. The portfolio runs entirely on the client side.
-
-### Customization
-
-To customize the portfolio for your own use:
-
-1. Replace images in `src/assets/images/` with your own
-2. Update personal information in `Portfolio.jsx`
-3. Modify project data in the `projects` array
-4. Update skills in the `skills` object
-5. Change color schemes in CSS files
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
-
-## ✨ Key Features Implementation
-
-### Theme Toggle
-```javascript
-const [isDarkMode, setIsDarkMode] = useState(true);
+```bash
+git clone https://github.com/Anyadiegwu/portfolio.git
+cd portfolio
+pnpm install
 ```
 
-### Smooth Scrolling
-```javascript
-const scrollToSection = (sectionId) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
-};
+### Development
+
+```bash
+pnpm dev
 ```
 
-### Progress Bar
-Dynamically updates based on scroll position to show reading progress.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🎯 Performance Optimizations
+## Available Commands
 
-- Lazy loading for images
-- Efficient CSS animations with `transform` and `opacity`
-- Minimal re-renders with React hooks
-- Optimized bundle size with Vite
+| Command | Purpose |
+| --- | --- |
+| `pnpm dev` | Start the local development server |
+| `pnpm lint` | Run ESLint across the project |
+| `pnpm typecheck` | Run strict TypeScript validation |
+| `pnpm build` | Create and validate the production build |
+| `pnpm start` | Serve an existing production build |
+| `pnpm test:e2e` | Build the app and run desktop/mobile Playwright tests |
+| `pnpm test:e2e:headed` | Run Playwright with visible browser windows |
+| `pnpm test:e2e:ui` | Open Playwright's interactive test UI |
+| `pnpm test:e2e:report` | Serve the most recent HTML test report |
+| `pnpm install --frozen-lockfile` | Reproduce the exact locked dependency installation |
 
-## 📄 License
+## Navigation and Theme Behavior
 
-This project is open source and available under the [MIT License](LICENSE).
+Internal navigation uses reusable scroll buttons rather than fragment links. Selecting **About**, **Skills**, **Projects**, or **Contact** smoothly moves to the matching section without changing the browser URL.
 
-## 🤝 Contact
+The site starts in light mode for visitors without a saved preference. Choosing a theme stores that explicit choice in `localStorage`, allowing it to persist between visits.
 
-**Victor Anyadiegwu**
+## End-to-End Testing
 
-- 📧 Email: victoranyadiegwu610@gmail.com
-- 📱 Phone: (+234) 8102680872
-- 💼 LinkedIn: [Victor Anyadiegwu](https://www.linkedin.com/in/victor-anyadiegwu-8286a9238)
-- 🐙 GitHub: [@Anyadiegwu](https://github.com/Anyadiegwu)
-- 📷 Instagram: [@veek__thor](https://www.instagram.com/veek__thor)
-- 🐦 Twitter: [@iam_veek_thor](http://www.twitter.com/iam_veek_thor)
+Playwright exercises the statically built production application in two Chromium projects:
 
-## 🙏 Acknowledgments
+- **Desktop Chrome** for full navigation, active-section tracking, and hero actions
+- **Mobile Chrome (Pixel 7)** for responsive layout and mobile-menu behavior
 
-- **Brekete Code Camp** - Foundation in frontend development
-- **Genesys Tech Hub** - Product development internship experience
-- **TECHPATRIATE & Brekete Family** - Early learning support
+The shared suite also verifies theme persistence, project cards and images, safe external-link attributes, résumé delivery, contact links, metadata, and the custom favicon.
 
----
+Install the project-managed Chromium runtime once after installing dependencies:
 
-⭐ **Star this repository if you found it helpful!**
+```bash
+pnpm exec playwright install chromium
+```
 
-Made with ❤️ by Victor Anyadiegwu
+On Linux machines that also need browser system libraries, use:
+
+```bash
+pnpm exec playwright install --with-deps chromium
+```
+
+Run the complete suite with:
+
+```bash
+pnpm test:e2e
+```
+
+Playwright automatically builds the Next.js application, starts it at `http://127.0.0.1:3000`, waits for readiness, and stops the managed server after testing. If that address already hosts the project locally, Playwright reuses it outside CI.
+
+Failure traces, screenshots, and videos are written to `test-results/`. The HTML report is written to `playwright-report/` and can be served with `pnpm test:e2e:report`.
+
+### GitHub Actions
+
+[`.github/workflows/playwright.yml`](.github/workflows/playwright.yml) runs on pushes and pull requests targeting `main`. It uses the frozen pnpm lockfile, installs Chromium and its Ubuntu dependencies, runs linting and TypeScript validation, then executes the complete Playwright suite.
+
+The workflow uploads the HTML report and raw test results for 14 days, including failure traces, screenshots, and videos when available.
+
+## Media and Performance
+
+- Portfolio images are stored as optimized WebP files.
+- The portrait is resized for practical web delivery.
+- Images are rendered through `next/image` with responsive size hints.
+- The homepage is statically generated during `pnpm build`.
+- The favicon contains 16×16, 32×32, 48×48, and 64×64 icon layers.
+
+## Deployment
+
+The project is ready for deployment on [Vercel](https://vercel.com/). Import the repository and use the detected Next.js settings, or build it manually with:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm build
+```
+
+For another Node.js host, run the production server after building:
+
+```bash
+pnpm start
+```
+
+## Contact
+
+**Victor Anyadiegwu** — Full-Stack & AI Engineer
+
+- **Email:** [victoranyadiegwu610@gmail.com](mailto:victoranyadiegwu610@gmail.com)
+- **Phone:** [(+234) 810 268 0872](tel:+2348102680872)
+- **LinkedIn:** [victor-anyadiegwu-8286a9238](https://www.linkedin.com/in/victor-anyadiegwu-8286a9238)
+- **GitHub:** [@Anyadiegwu](https://github.com/Anyadiegwu)
+- **X:** [@iam_veek_thor](https://x.com/iam_veek_thor)
+- **Instagram:** [@veek__thor](https://www.instagram.com/veek__thor)
